@@ -1,0 +1,33 @@
+{
+  "name": "apcgaming",
+  "version": "1.0.0",
+  "description": "Suite of minigames playable on APC Mini Mk2",
+  "main": "app/index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngkon6/APCGaming.git"
+  },
+  "scripts": {
+    "start": "node app/index.js"
+  },
+  "keywords": [
+    "apcmini",
+    "apc",
+    "snake",
+    "tetris",
+    "game",
+    "gaming",
+    "midi",
+    "ableton"
+  ],
+  "author": "ngkon",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ngkon6/APCGaming/issues"
+  },
+  "homepage": "https://github.com/ngkon6/APCGaming#readme",
+  "dependencies": {
+    "easymidi": "^3.2.0"
+  }
+}
