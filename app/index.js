@@ -42,6 +42,16 @@ const games = [{
         "", "Adjust tick interval with fader #9",
         "Press any orange button to start!"
     ]
+}, {
+    name: "Space Invaders",
+    file: "space-invaders.js",
+    notes: [
+        "[▴] Fire",
+        "[◂] Move left",
+        "[▸] Move right",
+        "", "Adjust enemy drop interval with fader #9",
+        "Press any purple button to start!"
+    ]
 }];
 
 const rl = readline.createInterface(process.stdin, process.stdout);

@@ -16,6 +16,7 @@ At this moment, the following games are available:
 - Snake
 - Tetris
 - Stacker
+- Space Invaders
 
 ## How to play
 1. Open a terminal.
