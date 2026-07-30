@@ -34,6 +34,14 @@ const games = [{
         "", "Adjust tick interval with fader #9",
         "Press any blue button to start!"
     ]
+}, {
+    name: "Stacker",
+    file: "stacker.js",
+    notes: [
+        "[▾] Next row",
+        "", "Adjust tick interval with fader #9",
+        "Press any orange button to start!"
+    ]
 }];
 
 const rl = readline.createInterface(process.stdin, process.stdout);
@@ -46,7 +54,7 @@ const listGames = () => {
     for (const game of games) {
         console.log(`→ ${game.name}`);
     }
-    console.log("\x1b[30mor type 'exit' to exit\x1b[0m");
+    console.log("\x1b[37mor type 'exit' to exit\x1b[0m");
 };
 
 const prompt = () => {
