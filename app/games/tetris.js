@@ -353,7 +353,7 @@ const update = () => {
     game.update();
 
     const board = game.getBoard2D();
-    
+
     for (let i=0; i<64; i++) {
         const x = i % 8;
         const y = 7 - Math.floor(i / 8);

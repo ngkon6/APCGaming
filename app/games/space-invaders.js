@@ -109,7 +109,7 @@ const update = () => {
             if (++explosions[i].stage >= 2) explosions.splice(i, 1);
             else i++;
         }
-        
+
         for (let i=0; i<shots.length;) {
             if (++shots[i].y >= 8) shots.splice(i, 1);
             else i++;
@@ -118,7 +118,7 @@ const update = () => {
 
     for (const pad of apc.pads) pad.color = APCMini.color.BLACK;
     apc.pads[playerX].color = gameOver ? APCMini.color.RED_ORANGE : APCMini.color.APPLE_GREEN;
-    
+
     for (const shot of shots) apc.pads[shot.y * 8 + shot.x].color = gameOver ? APCMini.color.RED : APCMini.color.WHITE;
     for (const explosion of explosions) {
         const tile = explosion.y * 8 + explosion.x;

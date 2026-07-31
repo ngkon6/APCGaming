@@ -10,7 +10,7 @@ const isAPCMiniConnected = () => {
     }
 
     return false;
-}
+};
 
 const games = [{
     name: "Snake",
@@ -54,7 +54,14 @@ const games = [{
     ]
 }];
 
-const rl = readline.createInterface(process.stdin, process.stdout);
+const autoCompleter = line => {
+    const completions = [...games.map(g => g.name), "exit"];
+    const hits = completions.filter(c => c.toLowerCase().startsWith(line.toLowerCase()));
+
+    return [hits.length ? hits : completions, line];
+};
+
+const rl = readline.createInterface(process.stdin, process.stdout, autoCompleter);
 /** @type {ChildProcess} */
 let child;
 
@@ -78,7 +85,7 @@ const prompt = () => {
                 break;
             }
         }
-    
+
         if (targetGameIndex > -1) {
             console.log(`Starting ${games[targetGameIndex].name}...\n`);
             for (const note of games[targetGameIndex].notes)
