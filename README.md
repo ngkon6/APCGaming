@@ -17,6 +17,7 @@ At this moment, the following games are available:
 - Tetris
 - Stacker
 - Space Invaders
+- Whack-a-Mole
 
 ## How to play
 1. Open a terminal.

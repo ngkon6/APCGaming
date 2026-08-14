@@ -52,6 +52,14 @@ const games = [{
         "", "Adjust enemy drop interval with fader #9",
         "Press any purple button to start!"
     ]
+}, {
+    name: "Whack-a-Mole",
+    file: "whack-a-mole.js",
+    notes: [
+        "• Tap all green buttons",
+        "• Do not tap red buttons",
+        "", "Get 8 points to win!"
+    ]
 }];
 
 const autoCompleter = line => {
