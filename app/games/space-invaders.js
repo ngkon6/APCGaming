@@ -35,9 +35,9 @@ let lastEnemySpawn = 0;
 let lastParticleUpdate = 0;
 let playerX = 3;
 let score = 0;
-const shotCooldown = enemyDropRate * 2;
-const enemySpawnRate = enemyDropRate * 2;
-const particleUpdateRate = enemyDropRate / 2.5;
+let enemySpawnRate = enemyDropRate * 2;
+const shotCooldown = enemyDropRate * 1.4;
+const particleUpdateRate = enemyDropRate / 2.6;
 
 apc.on("track-button-pressed", e => {
     if (startMenu) return;
@@ -75,6 +75,7 @@ const update = () => {
     now = new Date().getTime();
     if (now - lastEnemyDrop >= enemyDropRate) {
         lastEnemyDrop = now;
+        enemySpawnRate -= 3;
 
         for (let i=0; i<enemies.length; i++) {
             if (--enemies[i].y <= 0) gameOver = true;
