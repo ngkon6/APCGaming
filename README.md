@@ -32,3 +32,9 @@ At this moment, the following games are available:
     ```
 5. Enter the name of the game you want to play.
 6. **Have fun!**
+
+> [!NOTE]
+> This project has been developed and tested on a Linux Mint device.  
+> I cannot guarantee that it will work for Windows, Mac and other
+> Linux distributions at this moment.  
+> If you experience errors on your platform, feel free to open an issue!
