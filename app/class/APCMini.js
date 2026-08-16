@@ -76,8 +76,10 @@ export default class APCMini extends EventEmitter {
 
         for (let i in inputs)
             if (inputs[i].includes("APC mini mk2 Contr")) input = +i;
+            else if (inputs[i].includes("APC mini mk2")) input = +i;
         for (let i in outputs)
             if (outputs[i].includes("APC mini mk2 Contr")) output = +i;
+            else if (outputs[i].includes("APC mini mk2")) output = +i;
 
         if (input == -1 || output == -1) throw new Error("APC Mini Mk2 not found.");
 
