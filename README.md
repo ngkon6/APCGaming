@@ -34,7 +34,13 @@ At this moment, the following games are available:
 6. **Have fun!**
 
 > [!NOTE]
-> This project has been developed and tested on a Linux Mint device.  
-> I cannot guarantee that it will work for Windows, Mac and other
-> Linux distributions at this moment.  
-> If you experience errors on your platform, feel free to open an issue!
+> This project has been tested on:  
+> - Linux Mint 22.3;  
+> - Windows 10;  
+> - macOS Ventura.  
+> I cannot guarantee that it will work for other versions at this moment.  
+> If you experience errors on your device, feel free to open an issue!
+
+> [!IMPORTANT]
+> Make sure your NodeJS is a little up-to-date!  
+> NodeJS 20 did not work in my testing :)
