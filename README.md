@@ -37,7 +37,8 @@ At this moment, the following games are available:
 > This project has been tested on:  
 > - Linux Mint 22.3;  
 > - Windows 10;  
-> - macOS Ventura.  
+> - macOS Ventura.
+>
 > I cannot guarantee that it will work for other versions at this moment.  
 > If you experience errors on your device, feel free to open an issue!
 
