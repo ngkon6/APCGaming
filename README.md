@@ -18,6 +18,7 @@ At this moment, the following games are available:
 - Stacker
 - Space Invaders
 - Whack-a-Mole
+- Frogger
 
 ## How to play
 1. Open a terminal.

@@ -12,6 +12,13 @@ const isAPCMiniConnected = () => {
     return false;
 };
 
+/**
+ * @type {{
+ *  name: string,
+ *  file: string,
+ *  notes: string[]
+ * }[]}
+ */
 const games = [{
     name: "Snake",
     file: "snake.js",
@@ -59,6 +66,17 @@ const games = [{
         "• Tap all green buttons",
         "• Do not tap red buttons",
         "", "Get 8 points to win!"
+    ]
+}, {
+    name: "Frogger",
+    file: "frogger.js",
+    notes: [
+        "[▴] Move up",
+        "[▾] Move down",
+        "[◂] Move left",
+        "[▸] Move right",
+        "", "Adjust traffic speed with fader #9",
+        "Press any lime button to start!"
     ]
 }];
 
